@@ -1,0 +1,13 @@
+todo_list = []
+
+def add_task(task):
+    todo_list.append(task)
+
+def show_tasks():
+    for idx, task in enumerate(todo_list, 1):
+        print(f"{idx}. {task}")
+
+add_task("Study Python")
+add_task("Read a book")
+show_tasks()
+
